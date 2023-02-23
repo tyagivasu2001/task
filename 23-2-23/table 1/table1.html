@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Formation </title>
+    <link rel="stylesheet" href="table1.css">
+    <!--Link Our css file here -->
+</head>
+<body>
+     
+    <table>
+        <caption>Invoice</caption><!-- caption given to tble means heading of the table what table decribe -->
+        <tr>
+            <th>Item/Desc.</th><!--th Stands for table heading -->
+            <th>Qty</th>
+            <th>@</th>
+            <th>Price</th>
+        </tr>
+        <tr><!-- tr stands for table row and we add data horizonataly int it -->
+            <td>Paperclips(Box)</td>
+            <td>100</td>
+            <td>1.15</td><!-- td Stands for table data and this will also add in horizontal manner-->
+            <td>115.00</td>
+        </tr>
+
+        <tr>
+            <td>Paper(Case)</td>
+            <td>10</td>
+            <td>45.99</td>
+            <td>459.90</td>
+    
+        </tr>
+        <tr >
+            <td >Patepaper 
+                Basket</td>
+            <td >2</td>
+            <td>17.99</td>
+            <td>35.98</td>
+
+        </tr>
+        <tr >
+           <td colspan="3" class="c1"><b>Subtotal</b></td>
+           <!--colsapn is used to skip a column like include Subtotal we want all 3 column as a single column -->
+           <!--class id is given to them beacuse i want to give them a gary color -->
+           <td >610</td>
+        </tr>
+        <tr >
+            <td colspan="2" class="c1"> <b>Tax</b></td>
+            
+            <td>7%</td>
+            <td>42.76</td>
+         </tr>
+        <tr >
+            <td colspan="3" class="c1"><b>Total</b></td>
+            <td>653.64</td>
+        </tr>
+    </table>
+</body>
+</html>

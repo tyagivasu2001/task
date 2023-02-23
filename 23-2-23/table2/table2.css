@@ -1,0 +1,14 @@
+table,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+/*give a solid black border to the element and collapse remove the double border on elemnts  */
+table{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+/* to make the tble size bigger and margin set to auto  */
+.c2{
+    background-color: lightgray;
+}/* aplly the background color on group elemnt those class is c2*/ 
