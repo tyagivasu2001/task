@@ -1,0 +1,49 @@
+.main-class{
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: auto auto;
+    font-weight: bold;
+    background-color: lightgray;
+}
+.col{
+    border: 1px solid black;
+    padding:5px;
+}
+.col-1{
+    border: 1px solid black;
+    padding:5px;
+    background-color: lightgray;
+}
+
+.rest{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
+}
+.col4{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto auto auto auto;
+}
+.col3{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto auto auto auto;
+    background-color: lightgray;
+}
+.col2{
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: auto auto ;
+    
+}
+.col33{
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+    grid-template-rows: auto auto auto ;
+}
+.col-2{
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: auto auto ;
+}

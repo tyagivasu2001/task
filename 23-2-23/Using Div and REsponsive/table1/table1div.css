@@ -1,0 +1,44 @@
+
+.row{
+    font-weight: bold;
+    display: flex;
+    border: 1px solid black;
+    width: 100%;
+
+}
+.hori{
+    display: flex;
+    border: 1px solid black;
+}
+.bold{
+    font-weight: bold;
+}
+.col{
+    width: 25%;
+    background-color: lightgray;
+    border-right:1px solid black;
+}
+.col2{
+    width: 25%;
+    border-right:1px solid black;
+}
+.col3{
+width: 75%;
+border-right: 1px solid black;
+background-color: lightgray;
+}
+.col4{
+    width: 50%;
+    border-right: 1px solid black;
+    background-color: lightgray;
+}
+.col4-1{
+    width: 25%;
+    border-right:1px solid black;
+
+}
+.col5{
+    width: 75%;
+    border-right: 1px solid black;
+    background-color: lightgray;
+}
