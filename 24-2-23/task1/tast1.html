@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        /* i use java script to show the data*/
+    function call(){
+        var FirstName=document.getElementById("fname").value;
+        /* here the value of fname is stored in Firstname variable and dispaly later */
+        var lName=document.getElementById("lname").value;
+        var age=document.getElementById("age").value;
+        var gender=document.getElementById("gender").value;
+        document.writeln("FirstName: "+FirstName+"<br>");
+        document.writeln("LastName: "+lName+"<br>");
+        document.writeln("Age: "+age+"<br>");
+        document.writeln("gender: "+gender+"<br>");
+    }
+</script>
+</head>
+<body>
+    <form onsubmit="call()">
+        <label for="fname">FirstName:</label><br>
+        <input type="text" id="fname" name="fname" ><br>
+        <label for="lname">LastName:</label><br>
+        <input type="text" id="lname" name="lname" ><br>
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age"><br>
+        <p>Gender</p>
+        <input type="radio" id="gender" name="gender" value="male">
+        <label for="gender">Male</label><br>
+        <input type="radio" id="gender" name="gender" value="female">
+        <label for="gender">Female</label><br>
+        <input type="submit" name="Submit" >
+
+    </form>
+</body>
+</html>

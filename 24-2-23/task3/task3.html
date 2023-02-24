@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script type="text/javascript">
+        function val(){
+            
+            var f=document.getElementById("fname").value;
+            var l=document.getElementById("lname").value;
+            var ag=document.getElementById("age").value;
+            var g=document.getElementsByClassName("gender").value;
+            var add=document.getElementById("Address").value;
+            var cont=document.getElementById("contact").value;
+            var str=document.getElementById("stream").value;
+            document.writeln("FirstName: "+f+"<br>");
+            document.writeln("LastName: "+l+"<br>");
+            document.writeln("Age: "+ag+"<br>");
+            document.writeln("Gender: "+g+"<br>");
+            document.writeln("Address: "+add+"<br>");
+            document.writeln("Contact: "+cont+"<br>");
+            document.writeln("stream:",str);
+
+        }
+    </script>
+    <link rel="stylesheet" href="task3.css">
+</head>
+<body >
+    
+    
+    <form onsubmit="val()">
+        <h1>Registration Form</h1>
+    <fieldset class="main">
+    <legend>Student Detail</legend>
+    <label for="fname">FirstName:</label><br>
+    <input type="text" id="fname" name="fname" required><br>
+    <label for="lname">LastName:</label><br>
+    <input type="text" id="lname" name="lname" required><br>
+    <label for="age">Age:</label><br>
+    <input type="number" id="age" name="age" required><br>
+    <label for="gender">Gender:</label><br>
+    <input type="radio" class="gender" name="gender"value="Male" >
+    <label for="gender">Male</label><br>
+    <input type="radio" class="gender" name="gender" value="FeMale">
+    <label for="gender">Female</label><br>
+    <label for="Address" >Address:</label><br>
+    <input type="text" id="Address" name="Address" required><br>
+    <label for="contact ">Contact No:</label><br>
+    <input type="number " id="contact" name="contact" required><br>
+    <label for="Stream ">select Stream:</label><br>
+    <select name="stream" id="stream">
+        <optgroup label="Streams ">
+            <option value="Maths">Maths</option>
+            <option value="Arts">Arts</option>
+            <option value="Commerce">Commerce</option>
+            <option value="Biology">Biology</option>
+        </optgroup>
+        <input type="submit" value="Submit" id="submit">
+
+    </select> 
+
+    </fieldset>
+    </form> 
+</body>
+</html>

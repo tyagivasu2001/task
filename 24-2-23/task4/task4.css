@@ -1,0 +1,31 @@
+
+body,ul,li{
+   padding: 0;
+   margin: 0;
+   background-color:lightgray;
+}
+
+.car{
+    width: 100%;
+}
+.house{
+    width: 100%;
+    length:100%;
+}
+.food{
+    width: 100%;
+}
+img{
+    width: 24%;
+    height: 150px;
+}
+.product{
+    height: 100%;
+}
+.list{
+    display: flex;
+    float: right;
+}
+.li{
+    margin: 10px;
+}
