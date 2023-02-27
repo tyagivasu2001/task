@@ -1,0 +1,34 @@
+body{
+    background-color: black;
+}
+.list{
+    background-color: white;
+    display: flex;
+   margin: 0% 25% 25% 25%;
+}
+ul.d{
+    list-style-type: disc;
+}
+ul.e{
+    list-style-type: square;
+}
+ul.f{
+    list-style-type:circle;
+}
+ol.b{
+   list-style-type: upper-roman;
+
+}
+ol.c{
+    list-style-type: lower-alpha;
+    
+ }
+ .pink{
+    color: rgb(235, 88, 112);
+ }
+ .blue{
+    color:blue;
+ }
+ .yellow{
+    color: rgb(214, 214, 143);
+ }

@@ -1,0 +1,21 @@
+#about{
+    border: 2px solid black;
+    background-color: lightgray;
+}
+a{
+    border: 2px solid black;
+    
+}
+a:link{
+    background-color: bisque;
+}
+a:visited{
+    background-color: coral;
+
+}
+a:hover{
+    background-color: pink;
+}
+a:active{
+    background-color: black;
+}

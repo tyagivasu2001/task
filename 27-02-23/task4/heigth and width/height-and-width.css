@@ -1,0 +1,16 @@
+div{
+    background-color: aqua;
+    height: auto;
+    max-width: 500px;
+}
+h1{
+    color: blueviolet;
+}
+p{
+    background-color: lightgray;
+    height: auto;
+    width: 100%;
+ }
+ /*
+if we giving our text or element max heigth or width then it will take as much of heigthor width  */
+/* if we give width in % then the browser will automatically adjust the width and heigth automatically */

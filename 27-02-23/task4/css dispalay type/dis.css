@@ -1,0 +1,25 @@
+.block1{
+background-color: aqua;
+display: block;
+}
+.block2{
+    background-color: lightgray;
+    display: block;
+}
+.block3{
+    background-color: blue;
+    display: none;
+}
+/* none means it does not show in our code */
+.block4{
+    display: inline;
+   
+
+}
+.b5{
+    display: flex;
+}
+/* dispaly the element in flex position or strected position */
+.b6{
+    display: block;
+}

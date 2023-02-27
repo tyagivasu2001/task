@@ -1,0 +1,13 @@
+#margin{
+    border: 2px solid black;
+    margin: 10px;
+    background-color: rgb(189, 189, 165);
+}
+/* it will take margin of 10 px form every side and we can also write it as margin:10px 10px 10px 10px */
+#padding{
+    border: 2px solid black;
+    padding: 50px;
+    background-color: rgb(235, 232, 232);
+}
+/* here we can set our padding 50px in each direction but we have several methods to give 
+padding to an element like 50 50 50 50 it pronounce as 50 top 50 right 50 left 50 bottom */

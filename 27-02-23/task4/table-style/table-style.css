@@ -1,0 +1,18 @@
+tr:hover{
+    background-color: green;
+}
+table{
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+    width: 100%;
+}
+tr,td{
+    border: 1px solid #ddd;
+   
+}
+th{
+    background-color: green;
+}
+#gary{
+    background: lightgray;
+}
