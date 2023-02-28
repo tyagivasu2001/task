@@ -1,0 +1,48 @@
+body{
+    background-color: rgb(156, 161, 156);
+}
+#image{
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+img{
+    width: 33.33%;
+    padding: 2px;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color:black;
+}
+li{
+    width: 10%;
+     
+    color: white;
+    background-color: black;
+}
+.green{
+    background-color: green;
+}
+a{ 
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+fieldset{
+    margin: 30px;
+   
+}
+.active{
+    background-color: lightgreen;
+}
+a:hover{
+    background-color: green;
+}
+::selection{
+    background-color: green;
+    color: white;
+}

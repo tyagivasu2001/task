@@ -1,0 +1,26 @@
+p::first-line{
+    color:lightgray;
+    font-variant: small-caps;
+}
+/* Style the first line of the paragraph */
+p::first-letter{
+    color: red;
+}
+/* Style the first letter of paragarph */
+.operation p::after{
+    content:" A Beautiful Rose for You" ;
+}
+/* add the content after the element content  */
+.before p::before{
+    content:" India ";
+}
+/* this will add the content before the content of html element */
+::marker{
+    color: aqua;
+}
+/* marker is used to mark the list items */
+::selection{
+    color:rgb(41, 40, 40);
+    background: rgb(228, 193, 193);
+}
+/* selection is used to modify the selected text */

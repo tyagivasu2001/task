@@ -1,0 +1,57 @@
+
+a:hover{
+    background-color: azure;
+    border: 1px solid black;
+}
+
+a:visited{
+    background-color: cornflowerblue;
+}
+a:active{
+    color: black;
+}
+div:hover{
+   color: red;
+}
+#none{
+    display: none;
+    background: lightyellow;
+    padding:20px;
+}
+#non:hover p{
+    display: block;
+}
+/* if we hover over the div who have id non */
+p:first-child{
+    color: blue;
+}
+/* this will make all the p first childs blue  */
+p:last-child{
+    color: orange;
+}
+/* this will make the last child orange  */
+p:empty{
+   background:red;
+}
+/* empty means if any p have nothing in it then the 
+background becomes red */
+p:last-of-type{
+    color: pink;
+}
+/* last-of-type means that our p in last type of his parent  */
+#p p:nth-child(2){
+    color: mediumseagreen;
+}
+/* nth child means that in  the above example this select the 2
+child   */
+input:invalid{
+    border: 2px solid red;
+}
+/* if we enter the ivalid type then a border of red comes around  */
+input:valid{
+    border: 2px solid green ;
+}
+/* valid mean if our field we write correctly then gen box appear */
+p:lang(it){
+    color: gray;
+}

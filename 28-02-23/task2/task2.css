@@ -1,0 +1,35 @@
+body{
+    background-color:white;
+}
+.house{
+    display: flex;
+    height: 50%;
+    width: 100%;
+   
+}
+.image {
+    text-align: center;
+    width: 33.33%;
+    height: auto;
+    text-shadow: 2px solid lightgray;
+    border-radius: 15px;
+    margin: 10px;
+    background-color: aliceblue;
+    
+}
+img:hover,a:hover{
+    border: 2px solid black;
+}
+ a{
+    color: black;
+    font-weight: bold;
+    border: 2px solid white;
+    background-color: azure;
+    text-shadow: 2px;
+}
+@media (max-width:400px){
+    .house{
+       width: 100%;
+       height: auto;
+    }
+}
