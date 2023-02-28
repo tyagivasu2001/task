@@ -12,3 +12,10 @@
     padding: 10px;
 
 }
+ul{
+    list-style-type: none;
+    display: flex;
+}
+li{
+    padding: 10px;
+}
