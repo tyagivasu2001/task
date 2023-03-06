@@ -1,0 +1,13 @@
+.container{
+    display: grid;
+    background-color: aqua;
+    grid-row: 5;
+    grid-column: 5;
+}
+.item{
+   max-width: 100px;
+    height: 100px;
+    background-color: brown;
+    padding: 2px;
+    margin: 2px;
+}
