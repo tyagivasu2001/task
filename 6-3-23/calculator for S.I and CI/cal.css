@@ -1,0 +1,16 @@
+body{
+    text-align: center;
+    background-color: beige;
+}
+.container{
+    text-align: center;
+    padding: 10%;
+    
+
+}
+button{
+    background-color: bisque;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 5px;
+}

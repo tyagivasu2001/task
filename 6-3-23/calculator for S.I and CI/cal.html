@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="cal.css">
+    <script src="cal.js"></script>
+</head>
+<body>
+     <div class="container">
+        <h1>Calculate Interest</h1>
+        <label for="principalAmount">Pricipal Amount: </label><br>
+        <input type="number" id="principalAmount" required><br>
+        <label for="interestRate">Interest Rate: </label><br>
+        <input type="number" id="interestRate" required><br>
+        <label for="time">Time: </label><br>
+        <input type="number" id="time" required><br>
+        <button onclick="simpleIntrestCalculate()">S.I</button>
+        <button onclick=" compaundInterestCalculate()">C.I</button><br>
+     </div>
+
+</body>
+</html>
