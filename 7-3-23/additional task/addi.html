@@ -12,23 +12,24 @@
     <h1>Distance</h1>
     <div class="container">
     <select name="source" id="source" onchange="cal()">
-        <optgroup label="Source">
-            <option  value="Mumbai">Mumbai</option>
+        <optgroup label="Source" >
+            <option  value="Mumbai" selecteds>Mumbai</option>
             <option  value="delhi">Delhi</option>
             <option   value="Banglore">Banglore</option>
             <option  value="pune">Pune</option>
             <option  value="Noida">Noida</option>
         </optgroup>
     </select>
-    <select name="destination" id="destination" onchange="cal()">
+    <select name="destination" id="destination" onchange="val()">
         <optgroup label="Destination">
             <option  value="Mumbai">Mumbai</option>
-            <option  value="delhi">Delhi</option>
+            <option  value="delhi" selected>Delhi</option>
             <option  value="Banglore">Banglore</option>
             <option  value="pune">Pune</option>
             <option  value="Noida">Noida</option>
         </optgroup>
-    </select><br>
+    </select><br><br>
+    <button onclick="valid()">Find</button>
     
 </div>
 </body>
