@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="mouseevent.js"></script>
+    <style>
+        p{
+         cursor: pointer;
+        }
+    </style>
+    <title>Mouse Event</title>
+</head>
+<body>
+    <p onclick="on_click()">On click Event</p>
+    <p id="context" oncontextmenu="on_context(event)">on contextevent</p>
+    <p id="dbclick" ondblclick="on_dbclick()"> Double click</p>
+    <p id="mdown" onmousedown="on_mousedown()"> on mouse down</p>
+    <img id="mcenter" onmouseenter="on_mousecenter()" onmouseleave=" on_mouseleave()" src="istockphoto-1323420737-612x612.jpg" alt="College image">
+    <p id="mmove" onmousemove="on_mousemove()" onmouseout="on_mouseout()">on mouse move</p>
+    <p id="mover" onmouseover="on_mouseover()">on Mouse over</p>
+    <p id="mup" onmouseup="on_mouseup()">click me</p>
+</body>
+</html>

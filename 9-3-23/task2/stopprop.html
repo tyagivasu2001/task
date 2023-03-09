@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="stopprop.js" async></script>
+    <style>
+        #div1{
+            background-color: aquamarine;
+        }
+        #div2{
+            background-color: bisque;
+        }
+        div{
+            cursor: pointer;
+        }
+    </style>
+    <title>stopPropogation</title>
+</head>
+<body>
+    
+    <div id="div1" onclick="div1()">
+        <h3>stopPropogation()</h3>
+        <p>Stop propogation  prevent of parent when same event being happended</p>
+        <div id="div2" onclick="div2(event)" >this is child div</div>
+    </div>
+    Stop propagation:
+<input type="checkbox" id="check">
+</body>
+</html>

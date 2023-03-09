@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="preventdefaultt.js" async></script>
+    <title>preventdefault and stoppropogation</title>
+    <style>
+        #div1{
+            background-color: aqua;
+        }
+        #div2{
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body><h3>PreventDefault()</h3>
+    <p>prevent default method cancels the event if event is cancable
+        ,meaning that the default action belongs to the event will 
+    not occcur </p>
+    <a id="task" href="https://www.flipkart.com" >Flipkart</a>
+
+    <div id="div1" onclick="func1()">
+        <h3>stopPropogation()</h3>
+        <p>Stop propogation  prevent of parent when same event being happended</p>
+        <div id="div2" onclick="fun2()" >this is child div</div>
+    </div>
+</body>
+</html>
