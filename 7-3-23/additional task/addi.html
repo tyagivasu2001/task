@@ -4,33 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Source and Destination</title>
-    <script src="addi.js"></script>
-    
+    <title>Souce and Desination</title>
+    <script src="addi.js" defer></script>
 </head>
 <body>
-    <h1>Distance</h1>
+    <h1>Select Routes</h1>
     <div class="container">
-    <select name="source" id="source" onchange="cal()">
-        <optgroup label="Source" >
-            <option  value="Mumbai" selecteds>Mumbai</option>
-            <option  value="delhi">Delhi</option>
-            <option   value="Banglore">Banglore</option>
-            <option  value="pune">Pune</option>
-            <option  value="Noida">Noida</option>
-        </optgroup>
-    </select>
-    <select name="destination" id="destination" onchange="val()">
-        <optgroup label="Destination">
-            <option  value="Mumbai">Mumbai</option>
-            <option  value="delhi" selected>Delhi</option>
-            <option  value="Banglore">Banglore</option>
-            <option  value="pune">Pune</option>
-            <option  value="Noida">Noida</option>
-        </optgroup>
-    </select><br><br>
-    <button onclick="valid()">Find</button>
-    
-</div>
+        <select class="source" id="selectSource" onchange="src()">
+            <option selected disabled>Select Source</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Banglore">Banglore</option>
+            <option value="Pune">Pune</option>
+            <option value="Noida">Noida</option>
+        </select> 
+        <select class="destination" id="selectDestination">
+            <option selected disabled>Select Destination</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Banglore">Banglore</option>
+            <option value="Pune">Pune</option>
+            <option value="Noida">Noida</option>
+        </select>
+    </div>
+    <button type="button" onclick="valid()">find</button>
+    <h3>All Routes - </h3>
+    <p id="routes"></p>
 </body>
 </html>

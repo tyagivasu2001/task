@@ -1,40 +1,39 @@
-// Here i disabled the source value from destination.
-function cal() {
-  var sourcevalue = document.getElementById("source").value;
-  var destinationgroup = document.getElementById("destination");
-  var options = destinationgroup.getElementsByTagName("option");
-  for (let i = 0; i < options.length; i++) {
-    if (options[i].value == sourcevalue) {
-      options[i].disabled = true;
-    } else {
-      options[i].disabled = false;
+let source = document.getElementById("selectSource");
+let destination = document.getElementById("selectDestination");
+
+let route = new Map();
+route.set("Delhi", ["Delhi"]);
+route.set("Mumbai", ["Mumbai"]);
+route.set("Banglore", ["Banglore"]);
+route.set("Pune", ["Pune"]);
+route.set("Noida", ["Noida"]);
+
+function src() {
+  let destOptions = destination.options;
+  let blockedDest = route.get(source.value);
+  console.log(destOptions[2].value);
+
+  for (let i = 0; i < destOptions.length; i++) {
+    destOptions[i].disabled = false;
+  }
+
+  for (let i = 1; i < destOptions.length; i++) {
+    for (let j = 0; j < blockedDest.length; j++) {
+      if (destOptions[i].value == blockedDest[j]) {
+        destOptions[i].disabled = true;
+      }
     }
   }
 }
-function val(){
-    var destvalue = document.getElementById("destination").value;
-  var sourcegroup = document.getElementById("source");
-  var options = sourcegroup.getElementsByTagName("option");
-  for (let i = 0; i < options.length; i++) {
-    if (options[i].value == destvalue) {
-      options[i].disabled = true;
-    } else {
-      options[i].disabled = false;
-    }
-    }
-}
-function valid(){
-    let source=new Map();
-    source.set('Mumbai',false);
-    source.set('Delhi',false);
-    source.set('Banglore',false);
-    source.set('Pune',false);
-    source.set('Noida',false);
-    let dest=new Map();
-    dest.set('Mumbai',false);
-    dest.set('Delhi',false);
-    dest.set('Banglore',false);
-    dest.set('Pune',false);
-    dest.set('Noida',false);
 
+function valid() {
+  let newBlockedDest = route.get(source.value);
+  newBlockedDest.push(destination.value);
+  route.set(source.value, newBlockedDest);
+
+  let showRoutes = document.getElementById("routes");
+  showRoutes.innerHTML += source.value + " to " + destination.value + "<br>";
+
+  source.selectedIndex = 0;
+  destination.selectedIndex = 0;
 }
