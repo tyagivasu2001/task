@@ -18,7 +18,7 @@
             <option value="Pune">Pune</option>
             <option value="Noida">Noida</option>
         </select> 
-        <select class="destination" id="selectDestination">
+        <select class="destination" id="selectDestination" onchange="desti()">
             <option selected disabled>Select Destination</option>
             <option value="Delhi">Delhi</option>
             <option value="Mumbai">Mumbai</option>
@@ -28,7 +28,7 @@
         </select>
     </div>
     <button type="button" onclick="valid()">find</button>
-    <h3>All Routes - </h3>
+    <h3>All Routes : </h3>
     <p id="routes"></p>
 </body>
 </html>
