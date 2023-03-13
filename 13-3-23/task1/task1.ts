@@ -29,8 +29,8 @@ display():void{
     
 }
 }
-let obj=new Child("Tyagi","2cr",5);
-obj.display();
+let obj12=new Child("Tyagi","2cr",5);
+obj12.display();
 // multileval inheritance 
 // when inheritance occur in level A->B->C like that 
 class Grandfather{
@@ -64,3 +64,32 @@ obj2.height();
 obj2.property();
 obj2.newproperty();
 obj2.study();
+
+// There is no multiple inheritnace in typescript but we can achieve it using interface
+interface Person{
+    firstName:string;
+    lastName:string;
+    email:string;
+    address:string;
+
+}
+interface Employee{
+    empId:number;
+    salary:number;
+
+}
+interface Developer1 extends Person,Employee{
+    language:string;
+    
+ }
+ const Myself :Developer1=
+ {
+    firstName:"Vasu",
+    lastName:"Tyagi",
+    email:"vasutyagi2001@gmail.com",
+    address:"Noida",
+    empId:51,
+    salary:43000,
+    language:"typescript"
+ };
+ console.log(Myself);

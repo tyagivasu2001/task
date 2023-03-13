@@ -1,5 +1,6 @@
 //polymorphism is the ability to create a class that has more than one form or many forms
 //or classes have same methods but diffrent implimentation
+//or very simply we can say doing a thing with many forms like tee 
 class Animal{
     name:string
     constructor(name:string){
@@ -28,10 +29,41 @@ class Cow extends Animal{
         
     }
 }
+class Snake extends Animal{
+    makeSound(): void {
+        console.log("sh!......");
+        
+    }
+}
 let objDog=new Dog("tomy");
 objDog.makeSound();
 let objCat=new Cat("bali");
 objCat.makeSound();
 let objCow=new Cow("gori");
 objCow.makeSound();
+let objSnake=new Snake("python");
+objSnake.makeSound();
    
+//Another Example 
+class Tea{
+    maketea():void{
+        console.log("water +tea +milk");
+        
+    }
+}
+class Ravitea extends Tea{
+    maketea(): void {
+        console.log("water+ ilachi+ tea+ milk");
+        
+    }
+}
+class Vasutea extends Tea{
+    maketea(): void {
+        console.log("Water +ilachi +grnger+ tulsi +milk");
+        
+    }
+}
+let objRavi=new Ravitea();
+objRavi.maketea();
+let objvasu=new Vasutea();
+objvasu.maketea();
