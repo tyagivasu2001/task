@@ -45,6 +45,7 @@ let objSnake=new Snake("python");
 objSnake.makeSound();
    
 //Another Example 
+// making a tea with different forms
 class Tea{
     maketea():void{
         console.log("water +tea +milk");

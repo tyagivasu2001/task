@@ -7,7 +7,7 @@
 class Actions{
     private life=3;
     // We declare life private so that this value can't be changed and acessible
-     readonly name:string;
+    readonly name:string;
     constructor(name:string){
         this.name=name; 
     } 
@@ -39,10 +39,6 @@ player.shoot();
 let enemy=new Enemy("mario");
 enemy.shooted();
 enemy.shooted();
-
-
-
-
 //Another Example
 class Empl {
   public name = "Vasu Tyagi";

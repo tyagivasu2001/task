@@ -66,19 +66,24 @@ obj2.newproperty();
 obj2.study();
 
 // There is no multiple inheritnace in typescript but we can achieve it using interface
-interface Person{
+// Multiple inheritance is that when inherit property from more than one class/interface
+// here an example of multiple inheritance 
+interface Person
+{
     firstName:string;
     lastName:string;
     email:string;
     address:string;
 
 }
-interface Employee{
+interface Employee1
+{
     empId:number;
     salary:number;
 
 }
-interface Developer1 extends Person,Employee{
+interface Developer1 extends Person,Employee1
+{
     language:string;
     
  }

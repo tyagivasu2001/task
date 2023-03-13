@@ -19,4 +19,5 @@ for(let i=0;i<arr.length;i++)
         console.log(e);
     }
 }
+// print the modified array
 console.log(arr);
