@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="rest2.js"></script>
+    
+    <title>Book Your Seat</title>
+</head>
+<body>
+    <h1>Resturent Booking System</h1>
+    <h3>Timing: 9:00 AM - 10:00 PM</h3>
+   
+    <label for="date">Select Date:</label>
+    <input type="date" id="date"><br>
+    <label for="Booking">Select Table:</label>
+    <select name="seat" id="forseat">
+        <optgroup label="Select">
+            <option value="2" id="double">2 Person Seat</option>
+            <option value="4" id="quad"> 4 Person Seat</option>
+            <option value="6"  id="hexa">6 Person Seat</option>
+        </optgroup>
+    </select><br>
+    
+    <label for="timebook">Sart Time:</label>
+    <input type="time" id="starttime">
+    <label for="endtime">End Time:</label>
+    <input type="time" id="endtime">
+
+    <br>
+    <button onclick="book()">Book</button>  <br>
+    <p id="display">Booked item:</p>
+
+</body>
+</html>
