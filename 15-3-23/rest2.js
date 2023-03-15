@@ -11,10 +11,7 @@ function book()
     var starttime=document.getElementById("starttime").value;
     var endtime=document.getElementById("endtime").value;
     var seat=document.getElementById("forseat").value;
-    if(starttime<="9:00"||starttime>="22:00"){
-    window.alert("We are Closed");
-    }
-    else{
+    
     const obj={
         startTime:starttime,
         endTime:endtime
@@ -118,6 +115,6 @@ function book()
 
 
 
-            }
+
     }
     
