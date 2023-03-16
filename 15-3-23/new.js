@@ -37,7 +37,7 @@ function display(date,time,seat){
     const para = document.createElement("div");
     para.setAttribute("id",date+time+seat);
     const line = document.createElement("p");
-    line.innerHTML=seat +" is  Booked  on "+date+" for time slot: "+time;
+    line.innerHTML=seat +": is  Booked  for: "+date+" Between slot: "+time;
     para.appendChild(line);
     const button=document.createElement("button");
     button.innerHTML="Delete";
@@ -61,5 +61,13 @@ function Delete(date,time,seat){
     document.getElementById(id).remove();
     
 
+
+}
+function datevalidate(){
+    let todaydate=document.getElementById("date");
+    let date =new Date();
+    let str=date.toISOString();
+    todaydate.setAttribute("min",str.substr(0,10));
+    console.log(str);
 
 }
