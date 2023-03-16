@@ -6,3 +6,13 @@ html {
     display: table;
     margin: auto;
 }
+body{
+    background-image: url("https://assets.cntraveller.in/photos/63d8e5103d7229d4cf308f01/master/pass/Prequel-lead.jpg");
+}
+#upper,#lower{
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    opacity: 70%;
+    margin-bottom: 15px;
+}

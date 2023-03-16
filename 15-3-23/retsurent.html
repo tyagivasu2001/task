@@ -4,34 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="text/javascript" src="rest3.js"></script>
+    <script type="text/javascript" src="new.js"></script>
     <link rel="stylesheet" href="rest.css">
     
     <title>Book Your Seat</title>
 </head>
 <body>
-    <h1>Restaruant Booking System</h1>
-    <h3>Timing: 9:00 AM - 10:00 PM</h3>
+    
    
-    <label for="date">Select Date:</label>
+    <div id="upper">
+        <h1>Restaruant Booking System</h1>
+    <h3>Timing: 9:00 AM - 9:00 PM</h3>
+        <label for="date">Select Date:</label>
     <input type="date" id="date"><br>
     <label for="Booking">Select Table:</label>
     <select name="seat" id="forseat">
         <optgroup label="Select">
-            <option value="2" id="double">2 Person Seat</option>
-            <option value="4" id="quad"> 4 Person Seat</option>
-            <option value="6"  id="hexa">6 Person Seat</option>
+            <option value="Table 1" id="double">Table 1(For 2 people)</option>
+            <option value="Table 2" id="quad">Table 2(For 4 person)</option>
+            <option value="Table 3"  id="hexa">Table 3(For 4 person)</option>
+            <option value="Table 4"  id="hexa">Table 4(For 6 person)</option>
+            <option value="Table 5"  id="hexa">Table 5(For 6 person)</option>
         </optgroup>
     </select><br>
-    
-    <label for="timebook">Sart Time:</label>
-    <input type="time" id="starttime">
-    <label for="endtime">End Time:</label>
-    <input type="time" id="endtime">
+    <label for="timeslot">Time Slot: </label>
+    <select name="timebook" id="timebook">
+        <optgroup label="Select">
+            <option value="9:00 AM - 10:00 AM" id="1">9:00 AM - 10:00 AM</option>
+            <option value="10:00 AM - 11:00 AM" id="2">10:00 AM - 11:00 AM</option>
+            <option value="11:00 AM - 12:00 PM"  id="3">11:00 AM - 12:00 PM</option>
+            <option value="12:00 PM - 1:00 PM" id="4">12:00 PM - 1:00 PM</option>
+            <option value="1:00 PM - 2:00 PM" id="5">1:00 PM - 2:00 PM</option>
+            <option value="2:00 PM - 3:00 PM"  id="6">2:00 PM - 3:00 PM</option>
+            <option value="3:00 PM - 4:00 PM" id="7">3:00 PM - 4:00 PM</option>
+            <option value="4:00 PM - 5:00 PM" id="8">4:00 PM - 5:00 PM</option>
+            <option value="5:00 PM - 6:00 PM"  id="9">5:00 PM - 6:00 PM</option>
+            <option value="6:00 PM - 7:00 PM" id="10">6:00 PM - 7:00 PM</option>
+            <option value="7:00 PM - 8:00 PM" id="11"> 7:00 PM - 8:00 PM</option>
+            <option value="8:00 PM - 9:00 PM"  id="12">8:00 PM - 9:00 PM</option>
+        </optgroup>
+    </select><br>
 
     <br>
-    <button onclick="book()">Book</button>  <br>
-    <p id="display">Booked item:</p>
-
+    <button onclick="book()">Book</button>
+    </div> 
+    
+    <div id="lower">
+        <br>
+    <div id="display">Booked item:</div>
+    </div>
+  
 </body>
 </html>
