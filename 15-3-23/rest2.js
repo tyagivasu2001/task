@@ -1,12 +1,12 @@
-var double=new Map();
-double.set("tab1",[]);
-let quad=new Map();
-quad.set("tab2",[]);
-let hexa=new Map();
-hexa.set("tab3",[]);
 
-function book()
-{
+    var double=new Map();
+    double.set("tab1",[]);
+    let quad=new Map();
+    quad.set("tab2",[]);
+    let hexa=new Map();
+    hexa.set("tab3",[]);
+    function book()
+    {
     
     var starttime=document.getElementById("starttime").value;
     var endtime=document.getElementById("endtime").value;
@@ -28,7 +28,6 @@ function book()
         }
         else{
             let arr=JSON.parse(localStorage.getItem("doubleSeated"));
-            console.log(arr.length);
             let i=0;
             for( i=0;i<arr.length;i++){
                 if(arr[i].startTime<=starttime  && arr[i].endTime>=starttime || arr[i].endTime<=endtime && arr[i].endTime>=endtime){
@@ -60,7 +59,6 @@ function book()
             }
             else{
                 let arr=JSON.parse(localStorage.getItem("qudSeated"));
-                console.log(arr.length);
                 let i=0;
                 for( i=0;i<arr.length;i++){
                     if(arr[i].startTime<=starttime  && arr[i].endTime>=starttime || arr[i].endTime<=endtime && arr[i].endTime>=endtime){
@@ -81,7 +79,7 @@ function book()
                 }
             }
             if(seat==6){
-                tablesdub=hexa.get("tab3");
+                tablehex=hexa.get("tab3");
                 if(tablehex.length==0){
                     tablehex.push(obj);
                     let booked = document.getElementById("display");
@@ -91,8 +89,8 @@ function book()
         
                 }
                 else{
+
                     let arr=JSON.parse(localStorage.getItem("hexSeated"));
-                    console.log(arr.length);
                     var i=0;
                     for( i=0;i<arr.length;i++){
                         if(arr[i].startTime<=starttime  && arr[i].endTime>=starttime || arr[i].endTime<=endtime && arr[i].endTime>=endtime){
