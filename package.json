@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/tyagivasu2001/task#readme",
   "dependencies": {
+    "ejs": "^3.1.9",
     "mongodb": "^5.1.0"
   }
 }
