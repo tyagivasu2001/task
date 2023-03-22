@@ -1,0 +1,22 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tyagivasu2001/task.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tyagivasu2001/task/issues"
+  },
+  "homepage": "https://github.com/tyagivasu2001/task#readme",
+  "dependencies": {
+    "mongodb": "^5.1.0"
+  }
+}
