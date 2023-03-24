@@ -1,0 +1,11 @@
+const express= require('express');
+const router=express.Router();
+const apis=require('../controler/tablecontrole');
+router.get("/",apis.displaypage);
+router.get("/getTable",apis.getTable);
+router.post("/presenttable/:obj",apis.PresentTable);
+router.post("/delete/:obj",apis.deleteTable);
+router.get("/display",apis.displayTable);
+router.post("/put/:obj",apis.inserttable);
+router.get("/search", apis.searchResult);
+module.exports=router;
